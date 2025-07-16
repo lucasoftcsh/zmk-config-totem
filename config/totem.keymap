@@ -45,19 +45,18 @@
     };
 
     macros {
-        gif: gif {
-            label = "giphy";
+        pw_short: macro1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
+            bindings = <&kp LS(K) &kp I &kp N &kp D &kp EXCL &kp LS(P) &kp O &kp S &kp T &kp EXCL &kp N7>;
+            label = "MACRO1";
+        };
+
+        pw_long: macro1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(K) &kp I &kp N &kp D &kp EXCL &kp LS(P) &kp O &kp S &kp T &kp EXCL &kp LS(B) &kp A &kp N &kp A &kp N &kp A &kp EXCL &kp N7>;
+            label = "MACRO1";
         };
     };
 
@@ -122,6 +121,15 @@
         &kp RIGHT_PARENTHESIS  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp QUESTION    &kp COLON  &kp MINUS       &kp UNDERSCORE     &kp EQUAL  &kp PLUS
 &trans  &trans                 &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp FSLH        &kp SEMI   &kp SQT         &kp DOUBLE_QUOTES  &kp BSLH   &kp PIPE         &trans
                                                 &trans        &trans                &trans          &trans     &trans          &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
