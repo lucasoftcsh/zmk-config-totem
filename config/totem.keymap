@@ -45,7 +45,7 @@
     };
 
     macros {
-        pw_short: macro1 {
+        pw_short: macro0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(K) &kp I &kp N &kp D &kp EXCL &kp LS(P) &kp O &kp S &kp T &kp EXCL &kp N7>;
@@ -57,6 +57,17 @@
             #binding-cells = <0>;
             bindings = <&kp LS(K) &kp I &kp N &kp D &kp EXCL &kp LS(P) &kp O &kp S &kp T &kp EXCL &kp LS(B) &kp A &kp N &kp A &kp N &kp A &kp EXCL &kp N7>;
             label = "MACRO1";
+        };
+
+        glean_chat: glean_chat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LG(T)>,
+                <&macro_wait_time 50>,
+                <&kp C &kp H &kp A &kp T &kp ENTER>;
+
+            label = "GLEAN_CHAT";
         };
     };
 
@@ -126,10 +137,10 @@
 
         layer_3 {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &trans  &glean_chat        &pw_long         &pw_short         &trans    &trans  &kp F8   &kp F7   &kp F6   &kp F5
+        &trans  &trans             &trans           &trans            &trans    &trans  &kp F12  &kp F11  &kp F10  &kp F9
+&trans  &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_PLAY_PAUSE  &trans    &trans  &kp F4   &kp F3   &kp F2   &kp F1  &trans
+                                   &trans           &trans            &trans    &trans  &trans   &trans
             >;
         };
 
