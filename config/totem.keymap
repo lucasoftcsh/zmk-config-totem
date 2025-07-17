@@ -44,6 +44,14 @@
         };
     };
 
+    behaviors {
+        mouse_key_press: mouse_key_press {
+            compatible = "zmk,behavior-mouse-key-press";
+            label = "MOUSE_KEY_PRESS";
+            #binding-cells = <1>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
