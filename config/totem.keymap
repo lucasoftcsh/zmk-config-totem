@@ -33,6 +33,13 @@
     tapping-term-ms = <170>;
 };
 
+&msc {
+    x-input-code = <INPUT_REL_HWHEEL>;
+    y-input-code = <INPUT_REL_WHEEL>;
+    time-to-max-speed-ms = <200>;
+    acceleration-exponent = <2>;
+};
+
 / {
     combos { compatible = "zmk,combos"; };
 
