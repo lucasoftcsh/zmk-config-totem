@@ -22,11 +22,11 @@
 #define ADJ  3
 
 &lt {
-  quick-tap-ms = <100>;
+  quick-tap-ms = <500>;
 };
 
 &mt {
-  quick-tap-ms = <100>;
+  quick-tap-ms = <500>;
   flavor = "tap-preferred";
   tapping-term-ms = <170>;
 };
