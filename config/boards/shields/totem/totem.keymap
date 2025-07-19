@@ -21,9 +21,12 @@
 #define SYM  2
 #define ADJ  3
 
+&lt {
+  quick-tap-ms = <100>;
+};
+
 &mt {
   quick-tap-ms = <100>;
-  global-quick-tap;
   flavor = "tap-preferred";
   tapping-term-ms = <170>;
 };
