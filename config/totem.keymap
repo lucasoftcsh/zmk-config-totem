@@ -39,7 +39,7 @@
 &msc {
     x-input-code = <INPUT_REL_HWHEEL>;
     y-input-code = <INPUT_REL_WHEEL>;
-    time-to-max-speed-ms = <200>;
+    time-to-max-speed-ms = <0>;
     delay-ms = <0>;
     acceleration-exponent = <2>;
 };
