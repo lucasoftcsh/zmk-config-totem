@@ -112,8 +112,8 @@
 
             bindings = <
             &kp Q  &kp W       &kp E         &kp R           &kp T          &kp Y            &kp U           &kp I        &kp O           &kp Z
-            &kp A  &hml LGUI S  &mt LCTRL D   &mt LSHFT F     &kp G          &kp H            &mt RSHFT J     &mt RCTRL K  &mt LEFT_GUI L  &kp P
-&kp DELETE  &kp Z  &kp X       &kp C         &mt LEFT_ALT V  &kp B          &kp N            &mt LEFT_ALT M  &kp COMMA    &kp DOT         &kp FSLH  &kp CAPS
+            &kp A  &hml LGUI S  &hml LCTRL D   &hml LSHFT F     &kp G          &kp H            &hmr RSHFT J     &hmr RCTRL K  &hmr LEFT_GUI L  &kp P
+&kp DELETE  &kp Z  &kp X       &kp C         &hml LEFT_ALT V  &kp B          &kp N            &hmr LEFT_ALT M  &kp COMMA    &kp DOT         &kp FSLH  &kp CAPS
                                &lt 3 ESCAPE  &lt 1 TAB       &lt 2 SPACE    &lt 1 BACKSPACE  &lt 4 ENTER     &kp DELETE
             >;
         };
@@ -138,8 +138,8 @@
 
             bindings = <
        &none   &kp N7             &kp N8        &kp N9                 &none    &none     &none                    &none               &none           &none
-       &kp N0  &mt LGUI NUMBER_4  &mt LCTRL N5  &mt LSHIFT NUMBER_6    &none    &kp LEFT  &mt RSHIFT DOWN          &mt RCTRL UP_ARROW  &mt RGUI RIGHT  &none
-&none  &none   &kp NUMBER_1       &kp NUMBER_2  &mt LEFT_ALT NUMBER_3  &none    &kp HOME  &mt RIGHT_ALT PAGE_DOWN  &kp PAGE_UP         &kp END         &none  &none
+       &kp N0  &hml LGUI NUMBER_4  &hml LCTRL N5  &hml LSHIFT NUMBER_6    &none    &kp LEFT  &hmlr RSHIFT DOWN          &hmr RCTRL UP_ARROW  &hmr RGUI RIGHT  &none
+&none  &none   &kp NUMBER_1       &kp NUMBER_2  &hml LEFT_ALT NUMBER_3  &none    &kp HOME  &hmr RIGHT_ALT PAGE_DOWN  &kp PAGE_UP         &kp END         &none  &none
                                   &none         &none                  &none    &none     &none                    &none
             >;
         };
