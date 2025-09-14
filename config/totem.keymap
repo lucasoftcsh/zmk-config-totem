@@ -45,7 +45,14 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        COMBO_DEL {
+            bindings = <&kp DELETE>;
+            key-positions = <0 1>;
+        };
+    };
 
     macros {
         glean_chat: glean_chat {
