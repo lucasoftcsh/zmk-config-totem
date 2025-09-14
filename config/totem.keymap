@@ -138,7 +138,7 @@
 
             bindings = <
        &none   &kp N7             &kp N8        &kp N9                 &none    &none     &none                    &none               &none           &none
-       &kp N0  &hml LGUI NUMBER_4  &hml LCTRL N5  &hml LSHIFT NUMBER_6    &none    &kp LEFT  &hmlr RSHIFT DOWN          &hmr RCTRL UP_ARROW  &hmr RGUI RIGHT  &none
+       &kp N0  &hml LGUI NUMBER_4  &hml LCTRL N5  &hml LSHIFT NUMBER_6    &none    &kp LEFT  &hmr RSHIFT DOWN          &hmr RCTRL UP_ARROW  &hmr RGUI RIGHT  &none
 &none  &none   &kp NUMBER_1       &kp NUMBER_2  &hml LEFT_ALT NUMBER_3  &none    &kp HOME  &hmr RIGHT_ALT PAGE_DOWN  &kp PAGE_UP         &kp END         &none  &none
                                   &none         &none                  &none    &none     &none                    &none
             >;
