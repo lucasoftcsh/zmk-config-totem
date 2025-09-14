@@ -24,6 +24,10 @@
 #define TVP1 4
 #define TVP2 5
 
+#define KEYS_R 5 6 7 8 9 15 16 17 18 19 26 27 28 29 30 31
+#define KEYS_L 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 25
+#define KEYS_THUMB 32 33 34 35 36 37
+
 &lt {
     quick-tap-ms = <200>;
     flavor = "tap-preferred";
@@ -54,6 +58,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_R KEYS_THUMB>; 
             hold-trigger-on-release;
         };
         hmr: home_row_mod_right {
@@ -64,6 +69,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L KEYS_THUMB>; 
             hold-trigger-on-release;
         };
     };
