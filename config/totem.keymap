@@ -35,7 +35,7 @@
     require-prior-idle-ms = <100>;
     tapping-term-ms = <280>;
     quick-tap-ms = <175>;
-    bindings = <&mo>, <&kp>
+    bindings = <&mo>, <&kp>;
     hold-trigger-key-positions = <KEYS_R KEYS_L KEYS_THUMB>; 
     hold-trigger-on-release;
 };
