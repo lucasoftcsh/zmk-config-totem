@@ -29,9 +29,15 @@
 #define KEYS_THUMB 32 33 34 35 36 37
 
 &lt {
-    quick-tap-ms = <200>;
-    flavor = "tap-preferred";
-    tapping-term-ms = <170>;
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    flavor = "balanced";
+    require-prior-idle-ms = <100>;
+    tapping-term-ms = <280>;
+    quick-tap-ms = <175>;
+    bindings = <&mo>, <&kp>
+    hold-trigger-key-positions = <KEYS_R KEYS_L KEYS_THUMB>; 
+    hold-trigger-on-release;
 };
 
 &mt {
