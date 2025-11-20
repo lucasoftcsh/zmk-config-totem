@@ -6,6 +6,39 @@
 #define BASE 0
 #define SYM  1
 
+/ {
+    behaviors {
+        bt0_SorC: bt0_SorC {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BT0_SEL_OR_CLR";
+            #binding-cells = <0>;
+            tapping-term-ms = <3000>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&bt BT_CLR>, <&bt BT_SEL 0>;
+        };
+
+        bt1_SorC: bt1_SorC {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BT1_SEL_OR_CLR";
+            #binding-cells = <0>;
+            tapping-term-ms = <3000>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&bt BT_CLR>, <&bt BT_SEL 1>;
+        };
+
+        bt2_SorC: bt2_SorC {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BT2_SEL_OR_CLR";
+            #binding-cells = <0>;
+            tapping-term-ms = <3000>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&bt BT_CLR>, <&bt BT_SEL 2>;
+        };
+    };
+
  / { 
         keymap {
                 compatible = "zmk,keymap";
@@ -58,7 +91,7 @@ label= "SYM"                               ;
 // ╷            ╷            ╷            ╷            ╷            ╷            ╷   ╷            ╷            ╷            ╷            ╷            ╷            ╷
 
     &kp ESC      &kp F1       &kp F2       &kp F3       &kp F4       &kp F5           &kp F6       &kp F7       &kp F8       &kp F9       &kp F0       &kp PSCRN
-    &none        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none        &kp PG_UP        &none        &none        &none        &none        &none        &kp RBKT    
+    &none        &bt bt0_SorC &bt bt1_SorC &bt bt2_SorC &none        &kp PG_UP        &none        &none        &none        &none        &none        &kp RBKT    
     &none        &none        &none        &none        &none        &kp PG_DN        &none        &none        &kp UP       &none        &kp APOS     &kp RET
     &none        &none        &none        &none        &none        &none            &none        &kp LEFT     &kp DOWN     &kp RIGHT    &kp MINUS    &kp EQUAL
                  &none        &none        &none        &none        &kp INS          &kp HOME     &none        &none        &none        &none
