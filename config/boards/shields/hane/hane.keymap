@@ -7,21 +7,6 @@
 #define SYM  1
 
 / {
-    behaviors {
-        bt_clr_hold: bt_clr_hold {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BT_CLR_HOLD3S";
-            #binding-cells = <0>;
-            tapping-term-ms = <3000>;     /* 3초 이상 눌러야 hold */
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";     /* 방해(다른 키) 있어도 3초 안 지나면 tap로 처리 */
-            bindings = <&kp TAB>, <&bt BT_CLR>;
-            /* tap  -> TAB
-             * hold -> 현재 선택된 BT 프로파일 삭제
-             */
-        };
-    };
-
         keymap {
                 compatible = "zmk,keymap";
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -73,7 +58,7 @@ label= "SYM"                               ;
 // ╷            ╷            ╷            ╷            ╷            ╷            ╷   ╷            ╷            ╷            ╷            ╷            ╷            ╷
 
     &kp ESC      &kp F1       &kp F2       &kp F3       &kp F4       &kp F5           &kp F6       &kp F7       &kp F8       &kp F9       &kp F0       &kp PSCRN
-    &bt_clr_hold &BT_SEL 1    &BT_SEL 2    &BT_SEL 3    &none        &kp PG_UP        &none        &none        &none        &none        &none        &kp RBKT    
+    &bt BT_CLR  &bt BT_SEL 1 &bt BT_SEL   &bt BT_SEL 3 &none        &kp PG_UP        &none        &none        &none        &none        &none        &kp RBKT    
     &none        &none        &none        &none        &none        &kp PG_DN        &none        &none        &kp UP       &none        &kp APOS     &kp RET
     &none        &none        &none        &none        &none        &none            &none        &kp LEFT     &kp DOWN     &kp RIGHT    &kp MINUS    &kp EQUAL
                  &none        &none        &none        &none        &kp INS          &kp HOME     &none        &none        &none        &none
